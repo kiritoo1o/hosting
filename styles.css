@@ -1,0 +1,56 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0d1b2a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://example.com/sao-background.jpg'); /* Reemplaza con la URL de una imagen de fondo de SAO */
+    background-size: cover;
+    color: #e0e0e0;
+}
+.form-container {
+    background-color: rgba(13, 27, 42, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border: 2px solid #1b9aaa;
+    width: 300px;
+}
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #1b9aaa;
+    text-align: center;
+    text-shadow: 2px 2px #0b5394;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #1b9aaa;
+    font-weight: bold;
+}
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #1b9aaa;
+    border-radius: 5px;
+    background-color: #1c2e4a;
+    color: #e0e0e0;
+}
+.form-group input[type="submit"] {
+    background-color: #1b9aaa;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 1px 1px #0b5394;
+}
+.form-group input[type="submit"]:hover {
+    background-color: #0b5394;
+}
