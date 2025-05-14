@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro SAO</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function generarRasa() {
+            var random = Math.random() * 100; // Genera un número aleatorio entre 0 y 100
+            var rasa;
+
+            if (random < 45) {
+                rasa = "Humano";
+            } else if (random < 90) {
+                rasa = "Mitad Bestia";
+            } else {
+                rasa = "Tripido";
+            }
+
+            document.getElementById('rasa').value = rasa;
+            alert('Rasa generada: ' + rasa);
+        }
+    </script>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Registro Sword Art Online</h2>
+        <form action="http://localhost/xampp/David Zaragoza M3S3/Registrar.php" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required>
+            </div>
+            <div class="form-group">
+                <label for="curp">Curp:</label>
+                <input type="text" id="curp" name="curp" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Telefono:</label>
+                <input type="number" id="telefono" name="telefono" required>
+            </div>
+            <div class="form-group">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            <div class="form-group">
+                <label for="rasa">Rasa:</label>
+                <input type="text" id="rasa" name="rasa" readonly>
+                <button type="button" onclick="generarRasa()">Generar Rasa</button>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
