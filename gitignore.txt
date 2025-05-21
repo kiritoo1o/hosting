@@ -1,0 +1,20 @@
+# Variables de entorno reales
+.env
+
+# Archivos de configuración local
+config/local.php
+
+# Logs
+*.log
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Carpetas del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de respaldo
+*.bak
+*.backup
